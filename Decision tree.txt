@@ -1,0 +1,7 @@
+1. What are some common hyperparameters of decision tree models, and how do they affect the model's performance?
+A)Examples of hyperparameters include the number of nodes and layers in a neural network and the number of branches in a decision tree. Hyperparameters 
+determine key features such as model architecture, learning rate, and model complexity.
+
+2. What is the difference between the Label encoding and One-hot encoding?
+A)One-hot encoding is the representation of categorical variables as binary vectors. Label Encoding is converting labels/words into numeric form. Using one-hot encoding
+ increases the dimensionality of the data set. Label encoding doesn't affect the dimensionality of the data set.

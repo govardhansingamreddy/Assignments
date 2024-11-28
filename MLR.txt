@@ -1,0 +1,7 @@
+1.What is Normalization & Standardization and how is it helpful?
+A)Normalization rescales feature values within a predefined range, often between 0 and 1, which is particularly useful for
+ models where the scale of features varies greatly. In contrast, standardization centers data around the mean (0) and scales it according to the standard deviation (1).
+
+2.What techniques can be used to address multicollinearity in multiple linear regression?
+A)The potential solutions include the following: Remove some of the highly correlated independent variables. Linearly combine the independent variables, such as adding them together. Partial least squares regression 
+uses principal component analysis to create a set of uncorrelated components to include in the model.

@@ -1,0 +1,7 @@
+1. What are the key hyperparameters in KNN?
+A)Understand the parameters: The main hyperparameter to tune in k-nearest neighbors is k, the number of neighbors to consider. Other parameters include distance metrics, weights, and algorithm types. 2. Select a distance metric: Choose the right distance 
+metric to measure the similarity between the data points.
+
+2. What distance metrics can be used in KNN?
+A)Commonly used distance metrics for optimizing K-Nearest Neighbors (KNN) algorithms include Euclidean distance, Manhattan distance, Minkowski distance, 
+and Cosine similarity. Euclidean distance measures the straight-line distance between two points, suitable for continuous features.

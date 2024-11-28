@@ -1,0 +1,88 @@
+1. Explain Bagging and Boosting methods. How is it different from each other.
+
+A)Bagging and boosting are different ensemble techniques that use multiple models to reduce error and optimize the model. The bagging technique combines multiple models trained on different subsets of data, whereas boosting trains
+ the model sequentially, focusing on the error made by the previous model.
+
+2. Explain how to handle imbalance in the data.
+A)1. Oversampling: A Simple Trick to Balance Your Data
+In the world of data analysis, it’s crucial to have a balanced set of data to get accurate results. “Oversampling” is a handy technique to achieve this balance. It involves making copies of the smaller group of data until it’s as large as the bigger group. This way, the analysis is fair and gives us better results.
+
+Example: Handle imbalanced data using Oversampling in Detecting Fraud:
+Let’s say we have a set of bank transactions, labeled as “fraud” or “non-fraud”. At first, we have 100 “non-fraud” cases and only 20 “fraud” cases, which is not balanced. To fix this, we can copy some of the “fraud” cases until we have more, like 40, making the data more even. This helps in creating a system that can spot fraud more accurately.
+
+2. Under-sampling: A Strategy to Balance Your Data by Reducing Excess
+In data analysis, sometimes we have too much information from one group, which can skew the results. A technique called “under-sampling” can help fix this. It means we remove some examples from the larger group until it matches the size of the smaller group. This ensures a balanced view, helping to create a more reliable analysis.
+
+Example: Handle imbalanced data using Under-sampling in Fraud Detection:
+Imagine in the bank transaction dataset initially, we had 100 “non-fraud” cases and only 20 “fraud” cases. To make the data more balanced, we can remove some “non-fraud” cases until both groups are equal in size, say 20 each. This adjustment helps in building a system that can identify fraud with greater accuracy.
+
+3. Hybrid Sampling: Mixing Two Methods for Better Data
+When we work with data, it’s important to have a balanced mix to get the best results. “Hybrid sampling” helps us do just that. It’s a method where we add more examples to the smaller group and take away some from the bigger group. This way, we have a fair and even set of data to work with.
+
+Example: Handling imbalanced data using Hybrid Sampling to Spot Fraud
+Let’s take the same example where bank transactions are labelled as “fraud” or “non-fraud”. At the start, there are many more “non-fraud” cases than “fraud” cases. To make things more balanced, we can add more examples to the “fraud” group and remove some from the “non-fraud” group. This helps us have an equal number of cases in both groups, making it easier to spot fraud accurately.
+
+4. SMOTE: Creating New Examples to Balance Data
+While analyzing the data sometimes we need to add more examples to the smaller group to make the data balanced. “SMOTE”, which stands for Synthetic Minority Oversampling Technique, is a method that helps us do this. It picks two similar examples from the smaller group and makes a new example that is a mix of the two.
+
+Example: Handle imbalanced data using SMOTE to Help Find Fraud
+Let’s consider a bank transaction case where we don’t have many “fraud” examples. To fix this, SMOTE can be used to create new “fraud” examples. It does this by finding two “fraud” cases that are similar and then making a new case that is a blend of these two. This way, we have more “fraud” examples to work with, helping us to spot fraud more effectively.
+
+5. ADASYN: Adjusting the Data Balance Smartly
+When we are dealing with data, sometimes the groups are not evenly matched, with one group having much more data than the other. “ADASYN”, which stands for Adaptive Synthetic Sampling, is a smart tool that helps to even things out. It creates new examples in the smaller group, and the number of new examples it makes depends on how imbalanced the data is to start with.
+
+Example: Handle imbalanced data using ADASYN to Spot Fraud More Accurately
+Let’s say in bank transactions we have a lot more “non-fraud” cases compared to “fraud” cases, like a 10:1 ratio, ADASYN steps in to create more “fraud” examples. It will create even more new examples if the difference between “non-fraud” and “fraud” cases is larger, helping us to have a better balance and spot fraud more accurately.
+
+6. Tomek Links: A Method to Fine-Tune Your Data
+Sometimes while analyzing the data necessary to remove some data points to get a clearer picture. “Tomek Links” is a technique that helps us do this. It finds pairs of data where one is from the larger group and the other is from the smaller group, and they are very similar. Then, it removes the data point from the larger group to make the data more balanced.
+
+Example: Using Tomek Links to Improve Fraud Detection
+Imagine in the bank transactions dataset, we find pairs of transactions where one is “fraud” and the other is “non-fraud”, and they are quite similar. To make our data better, we remove the “non-fraud” transaction from the pair in the dataset. This way, our system can focus more on the distinct features of the “fraud” transactions, helping to identify fraud more accurately.
+
+7. ENN Rule: Cleaning Up Data with the Help of Neighbors
+When analyzing data, it’s crucial to have a clean and balanced dataset to get accurate results. The “Edited Nearest Neighbor” or ENN rule helps us achieve this. It works by spotting and removing data points from the larger group that are similar to points in the smaller group, helping to clear up any confusion and make the data more reliable.
+
+Example: Enhancing Fraud Detection with the ENN Rule
+In the bank transaction dataset, we might find a “non-fraud” transaction that is very similar to a couple of “fraud” transactions. To improve our data, we use the ENN rule to remove this “non-fraud” transaction. This way, we can focus more on the clear differences between “fraud” and “non-fraud” cases, helping us to spot fraud more effectively.
+
+8. Condensed Nearest Neighbor Rule: Building a Focused Dataset
+In data analysis, it’s often beneficial to create a focused dataset that zeroes in on the most relevant examples. The “Condensed Nearest Neighbor” rule helps us do this by forming a new dataset that includes only the most relevant examples from the larger group, along with all the examples from the smaller group. This way, we can concentrate on the data points that matter the most.
+
+Example: Refining Fraud Detection with the Condensed Nearest Neighbor Rule
+Imagine we have a dataset that labels bank transactions as either “fraud” or “non-fraud”. Using this rule, we find the “non-fraud” transactions that are most similar to the “fraud” transactions. We then create a new dataset that includes only these selected “non-fraud” transactions, along with all the “fraud” transactions. This approach helps us to focus on the most critical data points, potentially making our fraud detection methods more precise.
+
+9. Near Miss Method: A Focused Approach to Balancing Imbalanced Datasets
+Balancing imbalanced datasets is a crucial step in data analysis, especially when there is a significant disparity between the classes. The near-miss method is a technique designed to streamline this process. It works by identifying and removing data points from the majority class that are closely similar to those in the minority class, thus helping to create a more balanced and focused dataset.
+
+Example: Streamlining Fraud Detection with the Near Miss Method
+Imagine that we have a bank dataset with two classes: “fraud” and “non-fraud.” The “non-fraud” class is the majority class. We can use the Near Miss method to oversample the “fraud” class by following these steps:
+
+Identify the “non-fraud” transactions that are most similar to the “fraud” transactions. We can use a variety of methods to do this, such as K-NN or k-means clustering.
+Remove these “non-fraud” transactions from the dataset.
+The resulting dataset will have a more balanced class distribution, with an oversampled “fraud” class. This can help to improve the accuracy of fraud detection systems.
+
+Benefits of the Near Miss Method
+The Near Miss method has a number of benefits, including:
+
+It is a simple and effective oversampling technique.
+Particularly useful for datasets where the minority class is very small.
+Help to improve the accuracy of machine learning models by oversampling the minority class.
+Removes similar data points from the majority class thereby increasing the accuracy.
+10. One-Sided Selection: Balance the Imbalanced Data
+One-sided selection is a technique for oversampling the minority class in an imbalanced dataset. It involves selecting a subset of the majority class that is most similar to the minority class. Then the rest of the majority class examples are removed from the dataset.
+
+To do this, we first identify the majority class examples that are nearest to minority class examples. We can use a variety of methods to do this, such as k-nearest neighbors or k-means clustering.
+
+Once we have identified the most similar majority class examples, we create a new dataset that consists of those majority class examples and all of the minority class examples. We then remove the rest of the majority class examples from the dataset.
+
+Example:
+
+Suppose we have a dataset with two classes, “fraud” and “non-fraud”. Here the majority class is “non-fraud”. We can use one-sided selection to oversample the “fraud” class by following these steps:
+
+Identify the “non-fraud” examples that are nearest to the “fraud” examples.
+Create a new dataset that consists of those “non-fraud” examples and all of the “fraud” examples.
+Remove the rest of the “non-fraud” examples from the dataset.
+The resulting dataset will have a more balanced class distribution, with the “fraud” class being oversampled.
+
+One-sided selection is a simple and effective oversampling technique. It is particularly useful for datasets where the minority class is very small.
